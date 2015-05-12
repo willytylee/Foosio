@@ -1,4 +1,4 @@
-<form action="calculateRecoveryDate.php">
+<form action="index.php">
 	Start Date: <input type="datetime-local" name="date_time" required><br>
 	Recovery Hour: <input type="text" name="hour" required><br>
 	<input type="submit" value="Submit">
