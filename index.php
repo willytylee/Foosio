@@ -18,11 +18,11 @@ if (isset($_GET["date_time"]) && isset($_GET["hour"])) {
             $end_hour = 10 + $recover_hour;
             $minutes = "00";
         }
-        if ($hour >= 10 && $hour <= 16){
+        if ($hour >= 10 && $hour < 16){
         	$end_hour = $hour + $recover_hour;
         	$minutes = date_format($start_date, 'i');;	
         }
-        if ($hour > 16){
+        if ($hour >= 16){
         	if ($day_of_week == 5){
 				date_add($start_date, date_interval_create_from_date_string('3 days'));
 				$end_hour = 10 + $recover_hour;
